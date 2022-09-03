@@ -72,5 +72,10 @@ section:hover{
         scale: 1.2;
     }
 }
+@media only screen and (max-width: 600px) {
+    html{
+        position: static;
+    }
+} 
     
 
