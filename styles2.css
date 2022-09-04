@@ -48,13 +48,12 @@ section>h2{
    
 }
 fieldset{
-    
-    margin-left: 126%;
-    
+    position: relative;
+    left: 76vh;
+    margin-left:inherit;
     padding: 32%;
-    margin-top: 5%;
+    margin-top: 0%;
     background: #71d0ece8;
-    
 }
 label{
     font-size: large;
