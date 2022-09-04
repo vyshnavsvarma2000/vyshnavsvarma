@@ -19,7 +19,6 @@ body{
 a{
     text-decoration: none;
     color: rgba(233, 230, 230, 0.753);
- 
     position: relative;
     bottom: -15px;
     padding: 10px;
@@ -49,7 +48,7 @@ section>h2{
 }
 fieldset{
     position: relative;
-    left: 76vh;
+    left: 77vh;
     margin-left:inherit;
     padding: 32%;
     margin-top: 0%;
