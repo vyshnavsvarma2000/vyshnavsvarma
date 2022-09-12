@@ -27,7 +27,7 @@ a:hover{
     overflow: hidden;
 }
 html{
-    background: linear-gradient(to top, #1179c5, #0070b4 11%, #001024 82%, #001024);
+    background: linear-gradient(to top,lightgray 10%, #001024 92%, #001024);
 }
 section>h1{
     text-align: center;
@@ -36,13 +36,19 @@ section>h1{
 }
 section{
     width: 80%;
-    background-color: #71d0ece8;
+    background-color: #c9e4df;
     margin-left: auto;
     margin-right: auto;
     padding: 60px;
     padding-bottom: 20%;
     max-width: 500px;
+    transition: background 1s;
 }
+section:hover{
+    background: rgba(187, 220, 221, 0.76);
+  
+}
+
 @media only screen and (min-width: 400px) {
     html{
         position: static;
