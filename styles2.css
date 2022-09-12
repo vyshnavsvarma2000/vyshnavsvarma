@@ -19,6 +19,7 @@ body{
 a{
     text-decoration: none;
     color: rgba(233, 230, 230, 0.753);
+ 
     position: relative;
     bottom: -15px;
     padding: 10px;
@@ -52,8 +53,11 @@ fieldset{
     margin-left:inherit;
     padding: 32%;
     margin-top: 0%;
-    background: #71d0ece8;
-}
+    background-color: #c9e4df;
+    padding-bottom: 40.1%;
+    transition: background 1s;
+  }
+
 label{
     font-size: large;
     vertical-align: super;
@@ -61,7 +65,7 @@ label{
   
 }
 html{
-    background: linear-gradient(to top, #1179c5, #0070b4 11%, #001024 82%, #001024);
+    background: linear-gradient(to top,lightgray 10%, #001024 92%, #001024);
 }
 input{
     border-radius: 10px;
@@ -103,4 +107,11 @@ input[type="submit"]:active{
     html{
         position: static;
     }
+    section>h2{
+        position: static;
+    }
 } 
+fieldset:hover{
+    background: rgba(187, 220, 221, 0.76);
+  
+}
