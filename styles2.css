@@ -52,10 +52,10 @@ fieldset{
     position: relative;
     left: 65vh;
     margin-left:inherit;
-    padding: 32%;
+    padding: 26%;
     margin-top: 0%;
     background-color: #c9e4df;
-    padding-bottom: 40%;
+    padding-bottom: 20%;
     transition: background 1s;
   }
 
