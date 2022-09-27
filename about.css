@@ -35,9 +35,9 @@ section{
     background-color: #c9e4df;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px;
-    padding-bottom: 15%;
+    padding: 70px;
     max-width: 500px;
+    padding-bottom: 11%;
     transition: background 1s;
 
 }
@@ -59,13 +59,39 @@ section:hover{
 .name:hover{
     scale: 1.5;
 }
-
-
+.insta{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 6%;
+    top: -8px;
+   
+}
+.linkedin{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 10%;
+    top: -8px;
+}
+.git{
+    padding: 20px;
+    font-size: 50px;
+    width: 40px;
+    text-decoration: none;
+    position: absolute;
+    right: 13%;
+    top: -7px;
+    height: 46%;
+}
 
 @media only screen and (min-width: 400px) {
     html{
         position: static;
     }
 } 
-    
 
