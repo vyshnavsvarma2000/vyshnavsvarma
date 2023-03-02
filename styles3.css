@@ -2,10 +2,11 @@ body{
     margin: 0;
     padding: 0%;
     width: 100%;
+    background: url(background.png);
 }
 .navbar{
     display: block;
-    background: black;
+    background:linear-gradient(#00545d,#000729);
     width: 100%;
     color: white;
     padding-bottom: 30px;
@@ -14,12 +15,10 @@ body{
 a{
     text-decoration: none;
     color: rgba(233, 230, 230, 0.753);
- 
     position: relative;
     bottom: -15px;
     padding: 10px;
     transition: background-color 0.4s;
-
 
 }
 a:hover{
@@ -36,7 +35,7 @@ section>h1{
 }
 section{
     width: 80%;
-    background-color: #c9e4df;
+    opacity: 1;
     margin-left: auto;
     margin-right: auto;
     padding: 60px;
@@ -44,9 +43,23 @@ section{
     max-width: 500px;
     transition: background 1s;
 }
+p{
+    font-size: medium;
+    font-weight:normal;
+    z-index: 2;
+}
 section:hover{
-    background: rgba(187, 220, 221, 0.76);
+    background:#046b76,#000729;
   
+}
+
+h1:hover{
+    scale:1.8;
+    transition: 0.50s;
+}
+li:hover{
+    scale:1.1;
+    transition: 1s;
 }
 
 @media only screen and (min-width: 400px) {
