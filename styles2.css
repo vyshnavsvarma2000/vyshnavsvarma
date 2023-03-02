@@ -2,8 +2,7 @@ body{
     margin: 0;
     padding: 0%;
     width: 100%;
-  
-    
+    background: url(background.png);   
 }
 .form2{
     position: relative;
@@ -11,7 +10,7 @@ body{
 }
 .navbar{
     display: block;
-    background: black;
+    background: linear-gradient(#00545d,#000729);
     width: 100%;
     color: white;
     padding-bottom: 30px;
@@ -34,11 +33,11 @@ a:hover{
 }
 header>h1{
     text-align: center;
-    color: lightgrey;
+    color: rgb(12, 12, 12);
 }
 section>h2{
     text-align: center;
-    color: lightgray;
+    color: rgb(8, 8, 8);
 }
 .form-two{
     max-width: 500px;
@@ -52,10 +51,9 @@ fieldset{
     position: relative;
     left: 65vh;
     margin-left:inherit;
-    padding: 26%;
-    margin-top: 0%;
-    background-color: #c9e4df;
-    padding-bottom: 20%;
+    padding: 30%;
+    margin-top: 10%;
+    padding-bottom: 32%;
     transition: background 1s;
   }
 
@@ -65,9 +63,7 @@ label{
     font-weight: bold;
   
 }
-html{
-    background: linear-gradient(to top,lightgray 10%, #001024 92%, #001024);
-}
+
 input{
     border-radius: 10px;
     height: 25px;
@@ -80,6 +76,7 @@ input:hover{
 
 
 textarea{
+    margin-top: 30px;
     border-radius: 5px 25px 5px 25px ;
     vertical-align: super;
 }
@@ -87,7 +84,7 @@ textarea:hover{
     background-color: palegoldenrod;
 }
 input[type="submit"]{
-padding: 2px;
+padding: 1px;
 margin-left: 87%;
 margin-top: 4%;
 border:lightslategray;
@@ -112,8 +109,3 @@ input[type="submit"]:active{
         position: static;
     }
 } 
-fieldset:hover{
-    background: rgba(187, 220, 221, 0.76);
-  
-}
-
