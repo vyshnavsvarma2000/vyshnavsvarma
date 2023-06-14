@@ -1,107 +1,691 @@
-.navbar{
-    display: block;
-    background:linear-gradient(#00545d,#000729);
-    width: 100%;
-    color: white;
-    padding-bottom: 30px;
-    position: relative;
-   
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./static/Montserrat-Regular.ttf);
 }
-a{
-    text-decoration: none;
-    color: rgba(233, 230, 230, 0.753);
-    position: relative;
-    bottom: -15px;
-    padding: 10px;
-    transition: background-color 0.4s;
 
+@font-face {
+    font-family: 'Avenir';
+    src: url(./avenir_ff/AvenirLTStd-Book.otf);
+}
 
-}
-a:hover{
-    background-color: rgb(189, 87, 50);
-    overflow: hidden;
-    
-}
-header h1{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    
-}
-body{
-    background:url(background.png);
-    height: 100%;
-    width: 100%;
+* {
     margin: 0;
     padding: 0;
 }
 
-*{
-    box-sizing: border-box;
-
-}
-
-
-.container{
-    width: 100%;
-    background-color: rgb(51, 51, 51); 
-}
-.skills{
-    text-align: right;
-    padding-top: 8px;
-    padding-bottom: 10px;
-    color: white;
+.header {
+    display: flex;
     position: relative;
-   
-   
-}
-.html{
-    width: 100%;
-    background-color: #04AA6D;
-   
+    background-image: url(mainimage.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
 
 }
-.css{
-    width: 100%;
-    background-color: #2196F3;
+
+.container {
+    max-width: 1200px;
+    margin: auto;
 
 }
-.javascript{
-    width: 100%;
-    background-color: #f44336;
+
+.container-fluid {
+    max-width: 1400px;
 }
-.ds{
-    width: 100%;
-    background-color: #334297;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    gap: 2rem;
+}
+
+#mainlogo {
+    padding-left: 80px;
+}
+
+.nav-links {
+    text-align: right;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links ul li {
+    list-style: none;
+    padding: 8px 12px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+#schedule {
+    font-family: Montserrat;
+    background-color: #1FA1DB;
+    width: 224px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 21.94px;
+}
+
+#schedule2 {
+    font-family: Montserrat;
+    background-color: #1FA1DB;
+    width: 224px;
+    height: 60px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 21.94px;
+}
+.main1{
+    padding: 100px 0px;
+}
+
+.middlecontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14%;
+    row-gap: 20px;
+}
+
+#middletext {
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+    vertical-align: top;
 
 }
-.Python{
-    width: 100%;
-    background-color: coral;
-}
-.cpp{
-    width: 100%;
-    background-color: tomato;
 
+#middlepara {
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 25px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 35px;
 }
-.container-main{
-    margin-left: 35%;
-    margin-top: 12%;
-    padding-left:8%;
-    position: absolute;
-    top: 20px;
-    color: rgb(7, 7, 7);
-    font-size: large;
+
+.midcalc {
+    padding-top: 60px;
 }
-p{
+
+#calc {
+    padding-top: 30px;
+    text-align: center;
+    font-family: Montserrat;
     font-size: 20px;
+    vertical-align: top;
+    color: #ffffff;
 }
 
-.container-main>h1{
-    margin-left: 40px;
+.headfooter {
+    background-color: #1FA1DB;
 }
 
-@media only screen and (min-width: 400px) {
-    html{
-        position: static;
-    }
-} 
+.hfcontents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.25rem;
+}
+
+#hf1 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    float: right;
+    padding-top: 1.50rem;
+    padding-left: 1rem;
+}
+
+.maincontent1 {
+    display: flex;
+    align-items: center;
+    gap: 19%;
+}
+
+#cnth {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #231F20;
+
+}
+
+#cntp {
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+#imagert {
+    width: 585px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+.hm2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #231F20;
+    text-align: center;
+}
+
+.mcbox {
+    display: flex;
+    gap: 91px;
+}
+
+#bcnt {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #231F20;
+}
+.cnt1h{
+    margin-bottom: 2rem;
+}
+
+#bcntp {
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 3px;
+
+}
+
+#data {
+    width: 204px;
+    height: 50px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #1FA1DB;
+    border-radius: 5px;
+    color: #1FA1DB;
+    background-color: #F8F8F8;
+    line-height: 21.94px;
+
+}
+
+#sales {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    width: 111px;
+    height: 50px;
+    border: 2px solid #1FA1DB;
+    border-radius: 5px;
+    color: #1FA1DB;
+    background-color: #F8F8F8;
+    line-height: 21.94px;
+}
+
+#field {
+    width: 179px;
+    height: 50px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid #1FA1DB;
+    border-radius: 5px;
+    color: #1FA1DB;
+    background-color: #F8F8F8;
+    line-height: 21.94px;
+}
+
+.main2 {
+    margin-top: 100px;
+    background-color: #F8F8F8;
+    padding-bottom: 100px;
+
+}
+
+
+.headingmain2 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+#data,
+#sales,
+#field {
+    margin-top: 30px;
+}
+
+.testimonialmain {
+    background-image: url(testimonial.png);
+}
+
+.testimonial {
+    display: flex;
+    gap: 61px;
+    padding-top: 160px;
+}
+
+.left-testimonial {
+    width: 570px;
+    height: 291px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.right-testimonial {
+    width: 570px;
+    height: 291px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+
+}
+
+.headingperson p {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #ffffff
+}
+
+.contentperson p {
+    font-family: Avenir;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+#hm3 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #231F20;
+}
+
+.main3 {
+    padding: 100px 0px;
+    display: flex;
+}
+
+.headmain3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 48%;
+}
+
+.iconrhm {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #FFFFFF;
+    background-color: #1FA1DB;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.head {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.para {
+    font-family: Avenir;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.iconhead {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.rhmcontents {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.numbers {
+    padding: 4px;
+}
+
+.main3contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.boxp {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    position: absolute;
+    padding: 39px;
+    text-align: center;
+}
+
+.box1 {
+    border: 1px solid #1FA1DB;
+    width: 380px;
+    height: 130px;
+    border-radius: 20px;
+    position: relative;
+    top: 10;
+}
+
+.main3footer {
+    padding: 100px 0px;
+}
+
+.tick {
+    position: absolute;
+    left: 45%;
+    bottom: 83%;
+
+}
+
+.hm2aha {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #231F20;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.paraaha p {
+    font-family: Avenir;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0px;
+}
+
+.paraaha,
+.paraahaimg {
+    flex: 1;
+}
+
+.contentaha {
+    display: flex;
+    gap: 140px;
+}
+
+.whyaha {
+    padding: 100px 0px;
+    background-color: #F8F8F8;
+}
+
+.fieldoperations {
+    background-color: #1FA1DB;
+    padding: 100px 0px;
+}
+
+.fieldopcontents {
+    display: flex;
+    align-items: center;
+    column-gap: 11%;
+}
+
+.fphead {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.fophead {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    color: #FFFFFF;
+    max-width: 30.7rem;
+}
+
+.schedule3 {
+    font-family: Montserrat;
+    background-color: #FFFFFF;
+    width: 224px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    color: #1FA1DB;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 21.94px;
+}
+
+#happy {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.logoflex {
+    padding: 107px 0px;
+    column-gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boxcompany {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 278px;
+    height: 150px;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+
+.footermain {
+    background-color: #231F20;
+    padding-bottom: 60px;
+}
+
+.f {
+    font-family: Montserrat;
+    color: #8C8C8C;
+    float: right;
+    padding-left: 15px;
+}
+
+.footer1 {
+    padding: 70px 0px;
+}
+
+.footerright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    column-gap: 8rem;
+}
+
+#hrfoot {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #DDDDDD;
+    border-color: #DDDDDD;
+    opacity: 20%;
+}
+
+.navfooter {
+    display: flex;
+    column-gap: 30px;
+}
+
+.navfooter a {
+    font-family: Montserrat;
+    font-weight: 500;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #8C8C8C;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer2 {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-between;
+}
+
+#f3para {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    color: #8C8C8C;
+}
+
+#num {
+    color: #1FA1DB;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+
+}
+
+.footer1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#mail {
+    color: #1FA1DB;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.footer3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+#copy {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    color: #8C8C8C;
+    padding-top: 6px;
+
+}
+
+.footerright1 {
+    display: flex;
+    align-items: center;
+}
+
+.logosocial {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.email {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 5px;
+}
+
+.phoneandemail {
+    display: flex;
+    column-gap: 2.7rem;
+}
+
+.logosocial a {
+    cursor: pointer;
+}
+
+.nav-links ul li a:hover {
+    background-color: #93b7c1;
+    transition: 0.50s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #3d597c;
+    color: azure;
+    transition: 0.50s;
+}
+
+#data:hover,
+#sales:hover,
+#field:hover {
+    background-color: #3d597c;
+    color: azure;
+    opacity: 0.90;
+}
+
+#schedule:hover,
+#schedule2:hover,
+.schedule3:hover {
+    background-color: rgb(65, 131, 155);
+}
